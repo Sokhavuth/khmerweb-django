@@ -1,10 +1,14 @@
-<!--views/index.html-->
+<!--home/templates/base.html-->
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{{ data.siteTitle }}</title> 
+        <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
+        <link rel="stylesheet" href="{% static 'fonts/setup.css' %}" />
+        <link rel="icon" href="{% static 'images/siteLogo.png' %}" />
     </head>
     <body>
         <p>Welcome to Khmer Web Django!</p>

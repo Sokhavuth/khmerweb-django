@@ -1,3 +1,4 @@
+#home/views.py
 from django.shortcuts import render
 
 # Create your views here.
@@ -6,4 +7,4 @@ def index(request):
         'siteTitle':'Khmer Web'
     }
     
-    return render(request,'index.html',context={'data':kdict})
+    return render(request,'base.html',context={'data':kdict})
