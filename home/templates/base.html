@@ -5,12 +5,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>{{ data.siteTitle }}</title> 
+        <title>{{ data.siteTitle }} | {{ data.pageTitle }}</title> 
         <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
         <link rel="stylesheet" href="{% static 'fonts/setup.css' %}" />
         <link rel="icon" href="{% static 'images/siteLogo.png' %}" />
     </head>
     <body>
-        <p>Welcome to Khmer Web Django!</p>
+        <p>{{ data.message }}</p>
     </body>
 </html>
